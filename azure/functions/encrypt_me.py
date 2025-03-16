@@ -12,7 +12,7 @@ credential = DefaultAzureCredential()
 key_vault_client = SecretClient(vault_url=KEY_VAULT_URL, credential=credential)
 
 # Retrieve the encryption key from Key Vault
-ENCRYPTION_KEY = key_vault_client.get_secret("EncryptionKey").value
+ENCRYPTION_KEY = key_vault_client.get_secret("EncryptionME").value
 cipher_suite = Fernet(ENCRYPTION_KEY)
 
 def encrypt_data(data):
