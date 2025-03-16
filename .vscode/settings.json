@@ -1,0 +1,34 @@
+{
+    "sqltools.connections": [
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": false
+                }
+            },
+            "previewLimit": 50,
+            "server": "pii-data-me.postgres.database.azure.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "ME Region",
+            "password": "Admin@123",
+            "username": "rameezadminme",
+            "database": "pii-kyc"
+        },
+        {
+            "pgOptions": {
+                "ssl": {
+                    "rejectUnauthorized": true
+                }
+            },
+            "previewLimit": 50,
+            "server": "pii-data-eu.postgres.database.azure.com",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "EU Region",
+            "password": "Admin@123",
+            "username": "rameezadmineu",
+            "database": "pii-kyc"
+        }
+    ]
+}
